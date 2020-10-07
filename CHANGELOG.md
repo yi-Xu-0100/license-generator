@@ -9,11 +9,13 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ## [Unreleased]
 
-## [0.0.0] - 2020-10-07
+## [0.0.1] - 2020-10-07
 
 ### ✨ Added
 
-- [x] 🎉 first publish!
+- 🎉 first publish!
+- ✨ Support generate MIT license.
+- ✨ Support set the path author, year when to since from of the license.
 
 ### ♻️ Changed
 

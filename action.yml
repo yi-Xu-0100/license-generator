@@ -16,7 +16,7 @@ inputs:
     required: false
     default: MIT
   year:
-    description: 'Set up a license year'
+    description: 'Set up a license year when to since from'
     required: false
     default: none
   author:
