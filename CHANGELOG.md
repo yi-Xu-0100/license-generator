@@ -17,7 +17,7 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ### 🔒 Security
 
-## [0.0.0] - 2020-10-07
+## [0.0.1] - 2020-10-07
 
 ### ✨ Added
 
