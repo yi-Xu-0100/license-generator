@@ -13,9 +13,8 @@ A GitHub actions that use default template to generate license.
 - [⚡️ License Generator GitHub Action](#️-license-generator-github-action)
 - [🎨 Table of Contents](#-table-of-contents)
 - [🚀 Configuration](#-configuration)
-- [📝 Example](#-example)
-  - [📝 Example usage for show license generated](#-example-usage-for-show-license-generated)
-  - [📝 Use dependabot to keep action up-to-date](#-use-dependabot-to-keep-action-up-to-date)
+- [📝 Example usage for show license generated](#-example-usage-for-show-license-generated)
+- [📝 Use dependabot to keep action up-to-date](#-use-dependabot-to-keep-action-up-to-date)
 - [🔊 CHANGELOG](#-changelog)
 - [📄 LICENSE](#-license)
 
@@ -41,9 +40,7 @@ inputs:
     default: ${{ github.actor }}
 ```
 
-## 📝 Example
-
-### 📝 Example usage for show license generated
+## 📝 Example usage for show license generated
 
 ```yaml
 name: 'license-generator'
@@ -72,7 +69,7 @@ jobs:
           cat LICENSE.txt
 ```
 
-### 📝 Use dependabot to keep action up-to-date
+## 📝 Use dependabot to keep action up-to-date
 
 This file is build in `./github/dependabot.yml` to keep action up-to-date.
 
