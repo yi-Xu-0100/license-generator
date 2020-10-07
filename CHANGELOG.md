@@ -13,13 +13,15 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ### ♻️ Changed
 
-- [x] update readme to delete empty body for example section.
-- [x] fix changelog about v0.0.1.
-- [ ] fix year default value.
-
 ### 🐛 Fixed
 
 ### 🔒 Security
+
+## [0.0.2] - 2020-10-07
+
+- 📝 update readme to delete empty body for example section.
+- 🔊 fix changelog about v0.0.1.
+- 🚑 fix year default value case.
 
 ## [0.0.1] - 2020-10-07
 
@@ -29,5 +31,6 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 - ✨ Support generate MIT license.
 - ✨ Support set the path, the author and the year when to since from of the license.
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.2
 [0.0.1]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.1
