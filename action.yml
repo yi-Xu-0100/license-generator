@@ -1,6 +1,6 @@
 name: 'License-Generator'
 author: 'yi_Xu'
-description: 'Use repository traffic data to generate badges that include views and clones.'
+description: 'Use default template to generate license.'
 
 branding:
   icon: 'file-text'
@@ -8,19 +8,19 @@ branding:
 
 inputs:
   path:
-    description: 'Set up a license path'
+    description: 'Set up a license path.'
     required: false
     default: LICENSE
   type:
-    description: 'Set up a license type'
+    description: 'Set up a license type.'
     required: false
     default: MIT
   year:
-    description: 'Set up a license year when to since from'
+    description: 'Set up a license year when to since from.'
     required: false
     default: none
   author:
-    description: 'Set up a license author'
+    description: 'Set up a license author.'
     required: false
     default: ${{ github.actor }}
 

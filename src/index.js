@@ -4,7 +4,7 @@ const util = require('./util');
 
 const src = path.join(__dirname, '..');
 
-async function run() {
+function run() {
   core.startGroup('Get Input value');
   const license_path = path.join(src, core.getInput('path', { require: false }));
   core.info(`license_path: ${license_path}`);
@@ -19,17 +19,15 @@ async function run() {
   core.info(license_template_dir);
   core.endGroup();
   core.startGroup('Check license type');
-  var license_template_path = await util.checkLicense(license_template_dir, license_type);
+  var license_template_path = util.checkLicense(license_template_dir, license_type);
   core.endGroup();
   core.startGroup('Generate license');
-  await util.generateLicense(license_path, license_template_path, license_year, license_author);
+  util.generateLicense(license_path, license_template_path, license_year, license_author);
   core.endGroup();
 }
 
-(async () => {
-  try {
-    await run();
-  } catch (error) {
-    core.setFailed(`Action failed with "${error.message}"`);
-  }
-})();
+try {
+  run();
+} catch (error) {
+  core.setFailed(`Action failed with "${error.message}"`);
+}

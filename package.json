@@ -1,7 +1,7 @@
 {
   "name": "license-generator",
-  "version": "0.0.1",
-  "description": "Use template to generate license",
+  "version": "0.0.0",
+  "description": "Use default template to generate license.",
   "main": "dist/index.js",
   "scripts": {
     "lint-check": "prettier --check **/*.{js,yml,json,md} && eslint .",

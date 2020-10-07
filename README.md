@@ -6,7 +6,7 @@
 [![Github latest release](https://img.shields.io/github/v/release/yi-Xu-0100/license-generator)](https://github.com/yi-Xu-0100/license-generator/releases)
 [![Github license](https://img.shields.io/github/license/yi-Xu-0100/license-generator)](./LICENSE)
 
-A GitHub actions that use template to generate license.
+A GitHub actions that use default template to generate license.
 
 ## 🎨 Table of Contents
 
