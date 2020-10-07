@@ -7,21 +7,28 @@ const src = path.join(__dirname, '..');
 async function run() {
   core.startGroup('Get Input value');
   const license_path = path.join(src, core.getInput('path', { require: false }));
+  core.info(`license_path: ${license_path}`);
   const license_type = core.getInput('type', { require: false }).toLowerCase();
+  core.info(`license_type in lower case: ${license_type}`);
   const license_year = core.getInput('year', { require: false });
+  core.info(`license_year: ${license_year}`);
   const license_author = core.getInput('author', { require: false });
-  const license_template_path = path.join(src, 'template');
+  core.info(`license_author: ${license_author}`);
+  const license_template_dir = path.join(src, 'template');
+  core.info(`license_template_dir: ${license_template_dir}`);
   core.endGroup();
   core.startGroup('Check license type');
-  var license_template = util.checkLicense(license_template_path, license_type);
+  var license_template_path = await util.checkLicense(license_template_dir, license_type);
   core.endGroup();
   core.startGroup('Generate license');
-  await util.generateLicense(license_path, license_template, license_year, license_author);
+  await util.generateLicense(license_path, license_template_path, license_year, license_author);
   core.endGroup();
 }
 
-try {
-  run();
-} catch (error) {
-  core.setFailed(error);
-}
+(async () => {
+  try {
+    await run();
+  } catch (error) {
+    core.setFailed(`Action failed with "${error.message}"`);
+  }
+})();

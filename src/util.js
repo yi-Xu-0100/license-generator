@@ -1,9 +1,11 @@
+const core = require('@actions/core');
 const fs = require('fs');
 const path = require('path');
 
-let checkLicense = async function (template_path, type) {
-  var template = path.join(template_path, `${type}.txt`);
-  if (fs.existsSync(template)) return template;
+let checkLicense = async function (template_dir, type) {
+  var template_path = path.join(template_dir, `${type}.txt`);
+  core.info(`template_path: ${template_path}`);
+  if (fs.existsSync(template_path)) return template_path;
   else {
     throw new Error(`Can not find the template of ${type} license!`);
   }
