@@ -21,6 +21,7 @@ let generateLicense = function (_path, template, year, author) {
   core.info(_path);
   var _year = new Date().getFullYear();
   core.info(`Now year: ${_year}`);
+  if (year === 'none') year = _year;
   if (parseInt(year) != _year) _year = `${year}-${_year}`;
   core.info(`License year: ${_year}`);
   data = data.replace(/{author}/g, author).replace(/{year}/g, _year);

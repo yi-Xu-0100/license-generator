@@ -15,6 +15,7 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 - [x] update readme to delete empty body for example section.
 - [x] fix changelog about v0.0.1.
+- [ ] fix year default value.
 
 ### 🐛 Fixed
 
