@@ -1,13 +1,29 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'License-Generator'
+author: 'yi_Xu'
+description: 'Use repository traffic data to generate badges that include views and clones.'
+
+branding:
+  icon: 'file-text'
+  color: 'blue'
+
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  path:
+    description: 'Set up a license path'
+    required: false
+    default: LICENSE
+  type:
+    description: 'Set up a license type'
+    required: false
+    default: MIT
+  year:
+    description: 'Set up a license year'
+    required: false
+    default: none
+  author:
+    description: 'Set up a license author'
+    required: false
+    default: ${{ github.actor }}
+
 runs:
   using: 'node12'
   main: 'dist/index.js'

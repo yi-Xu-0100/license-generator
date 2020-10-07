@@ -1,0 +1,25 @@
+name: licenseGenerator
+
+on:
+  push:
+    - main
+
+jobs:
+  run:
+    name: Generate License
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2.3.3
+
+      - name: Generate License
+        uses: ./
+        with:
+          path: LICENSE.txt
+          type: MIT
+          year: 2019
+          author: yi_Xu
+
+      - name: show License
+        run: |
+          cat LICENSE.txt
