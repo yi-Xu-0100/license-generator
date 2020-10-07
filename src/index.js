@@ -15,7 +15,8 @@ async function run() {
   const license_author = core.getInput('author', { require: false });
   core.info(`license_author: ${license_author}`);
   const license_template_dir = path.join(src, 'template');
-  core.info(`license_template_dir: ${license_template_dir}`);
+  core.info('license_template_dir:');
+  core.info(license_template_dir);
   core.endGroup();
   core.startGroup('Check license type');
   var license_template_path = await util.checkLicense(license_template_dir, license_type);

@@ -15,7 +15,7 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 - 🎉 first publish!
 - ✨ Support generate MIT license.
-- ✨ Support set the path author, year when to since from of the license.
+- ✨ Support set the path, the author and the year when to since from of the license.
 
 ### ♻️ Changed
 
