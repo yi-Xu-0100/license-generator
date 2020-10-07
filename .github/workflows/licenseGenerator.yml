@@ -2,7 +2,8 @@ name: licenseGenerator
 
 on:
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   run:

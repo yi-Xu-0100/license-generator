@@ -9,9 +9,11 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ## [Unreleased]
 
+## [0.0.0] - 2020-10-07
+
 ### ✨ Added
 
-- [ ] generate a license
+- [x] 🎉 first publish!
 
 ### ♻️ Changed
 
@@ -21,5 +23,5 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ### 🗑 Deprecated
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/mindsers/changelog-reader-action/compare/v1.0.0
+[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.1
