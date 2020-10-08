@@ -12,7 +12,7 @@ let checkLicense = function (template_dir, type) {
   }
 };
 
-let generateLicense = function (_path, template, year, author) {
+let generateLicense = function (_path, template, year, author, work) {
   fs.copyFileSync(template, _path);
   core.info('Copy complete, and the license template from:');
   core.info(template);
@@ -24,7 +24,10 @@ let generateLicense = function (_path, template, year, author) {
   if (year === 'none') year = _year;
   if (parseInt(year) != _year) _year = `${year}-${_year}`;
   core.info(`License year: ${_year}`);
-  data = data.replace(/{author}/g, author).replace(/{year}/g, _year);
+  data = data
+    .replace(/{author}/g, author)
+    .replace(/{year}/g, _year)
+    .replace(/{work}/g, work);
   fs.writeFileSync(_path, data, 'utf-8');
   core.info('Write complete and the data is:');
   core.info(data);

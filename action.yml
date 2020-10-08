@@ -8,21 +8,25 @@ branding:
 
 inputs:
   path:
-    description: 'Set up a license path.'
+    description: 'Set up the path of license.'
     required: false
     default: LICENSE
   type:
-    description: 'Set up a license type.'
+    description: 'Set up the type of license.'
     required: false
     default: MIT
   year:
-    description: 'Set up a license year when to since from.'
+    description: 'Set up the year when to since from of license.'
     required: false
     default: none
   author:
-    description: 'Set up a license author.'
+    description: 'Set up the author of license.'
     required: false
     default: ${{ github.actor }}
+  work:
+    description: 'Set up the work name of license.'
+    required: false
+    default: ${{ github.repository }}
 
 runs:
   using: 'node12'

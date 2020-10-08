@@ -14,6 +14,8 @@ function run() {
   core.info(`license_year: ${license_year}`);
   const license_author = core.getInput('author', { require: false });
   core.info(`license_author: ${license_author}`);
+  const license_work = core.getInput('work', { require: false }).split('/').pop();
+  core.info(`license_work: ${license_work}`);
   const license_template_dir = path.join(src, 'template');
   core.info('license_template_dir:');
   core.info(license_template_dir);
@@ -22,7 +24,13 @@ function run() {
   var license_template_path = util.checkLicense(license_template_dir, license_type);
   core.endGroup();
   core.startGroup('Generate license');
-  util.generateLicense(license_path, license_template_path, license_year, license_author);
+  util.generateLicense(
+    license_path,
+    license_template_path,
+    license_year,
+    license_author,
+    license_work
+  );
   core.endGroup();
 }
 
