@@ -17,8 +17,6 @@ jobs:
         with:
           path: LICENSE
           type: CC-BY-SA-4.0
-          year: 2019
-          author: yi_Xu
 
       - name: Show License
         run: |

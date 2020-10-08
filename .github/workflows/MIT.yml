@@ -17,8 +17,6 @@ jobs:
         with:
           path: LICENSE
           type: MIT
-          year: 2019
-          author: yi_Xu
 
       - name: Show License
         run: |
