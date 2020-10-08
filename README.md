@@ -12,32 +12,49 @@ A GitHub actions that use default template to generate license.
 
 - [⚡️ License Generator GitHub Action](#️-license-generator-github-action)
 - [🎨 Table of Contents](#-table-of-contents)
+- [Support license table](#support-license-table)
 - [🚀 Configuration](#-configuration)
 - [📝 Example usage for show license generated](#-example-usage-for-show-license-generated)
 - [📝 Use dependabot to keep action up-to-date](#-use-dependabot-to-keep-action-up-to-date)
 - [🔊 CHANGELOG](#-changelog)
 - [📄 LICENSE](#-license)
 
+## Support license table
+
+|     license     | configuration(support) |                                                                                                build                                                                                                |
+| :-------------: | :--------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       MIT       |    path,year,author    |                   [![MIT](https://github.com/yi-Xu-0100/license-generator/workflows/MIT/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3AMIT)                   |
+|    CC-BY-4.0    | path,year,author,work  |          [![CC-BY-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-4.0)          |
+|  CC-BY-NC-4.0   | path,year,author,work  |     [![CC-BY-NC-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-NC-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-NC-4.0)      |
+|  CC-BY-ND-4.0   | path,year,author,work  |     [![CC-BY-ND-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-ND-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-ND-4.0)      |
+|  CC-BY-SA-4.0   | path,year,author,work  |     [![CC-BY-SA-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-SA-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-SA-4.0)      |
+| CC-BY-NC-ND-4.0 | path,year,author,work  | [![CC-BY-NC-ND-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-NC-ND-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-NC-ND-4.0) |
+| CC-BY-NC-SA-4.0 | path,year,author,work  | [![CC-BY-NC-SA-4.0](https://github.com/yi-Xu-0100/license-generator/workflows/CC-BY-NC-SA-4.0/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3ACC-BY-NC-SA-4.0) |
+
 ## 🚀 Configuration
 
 ```yaml
 inputs:
   path:
-    description: 'Set up a license path'
+    description: 'Set up the path of license.'
     required: false
     default: LICENSE
   type:
-    description: 'Set up a license type'
+    description: 'Set up the type of license.'
     required: false
     default: MIT
   year:
-    description: 'Set up a license year'
+    description: 'Set up the year when to since from of license.'
     required: false
     default: none
   author:
-    description: 'Set up a license author'
+    description: 'Set up the author of license.'
     required: false
     default: ${{ github.actor }}
+  work:
+    description: 'Set up the work name of license.'
+    required: false
+    default: ${{ github.repository }}
 ```
 
 ## 📝 Example usage for show license generated

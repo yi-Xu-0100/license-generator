@@ -1,13 +1,12 @@
-name: licenseGenerator
+name: CC-BY-SA-4.0
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '20 1 * * *'
 
 jobs:
   run:
-    name: Generate License
+    name: Generate CC-BY-SA-4.0 License
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -16,11 +15,11 @@ jobs:
       - name: Generate License
         uses: ./
         with:
-          path: LICENSE.txt
-          type: MIT
+          path: LICENSE
+          type: CC-BY-SA-4.0
           year: 2019
           author: yi_Xu
 
       - name: Show License
         run: |
-          cat LICENSE.txt
+          cat LICENSE

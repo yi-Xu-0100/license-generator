@@ -1,13 +1,12 @@
-name: licenseGenerator
+name: MIT
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '1 1 * * *'
 
 jobs:
   run:
-    name: Generate License
+    name: Generate MIT License
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -16,11 +15,11 @@ jobs:
       - name: Generate License
         uses: ./
         with:
-          path: LICENSE.txt
+          path: LICENSE
           type: MIT
           year: 2019
           author: yi_Xu
 
       - name: Show License
         run: |
-          cat LICENSE.txt
+          cat LICENSE
