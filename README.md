@@ -12,14 +12,14 @@ A GitHub actions that use default template to generate license.
 
 - [⚡️ License Generator GitHub Action](#️-license-generator-github-action)
 - [🎨 Table of Contents](#-table-of-contents)
-- [Support license table](#support-license-table)
+- [✅ Support license table](#-support-license-table)
 - [🚀 Configuration](#-configuration)
 - [📝 Example usage for show license generated](#-example-usage-for-show-license-generated)
 - [📝 Use dependabot to keep action up-to-date](#-use-dependabot-to-keep-action-up-to-date)
 - [🔊 CHANGELOG](#-changelog)
 - [📄 LICENSE](#-license)
 
-## Support license table
+## ✅ Support license table
 
 |                                license                                |                      configuration(support)                      |                                                                                                build                                                                                                |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
