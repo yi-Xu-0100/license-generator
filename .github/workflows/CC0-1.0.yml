@@ -1,0 +1,23 @@
+name: CC0-1.0
+
+on:
+  schedule:
+    - cron: '35 1 * * *'
+
+jobs:
+  run:
+    name: Generate CC0-1.0 License
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2.3.3
+
+      - name: Generate License
+        uses: ./
+        with:
+          path: LICENSE
+          type: CC0-1.0
+
+      - name: Show License
+        run: |
+          cat LICENSE
