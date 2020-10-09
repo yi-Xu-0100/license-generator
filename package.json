@@ -1,6 +1,6 @@
 {
   "name": "license-generator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Use default template to generate license.",
   "main": "dist/index.js",
   "scripts": {
