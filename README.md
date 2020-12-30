@@ -1,6 +1,6 @@
-## ⚡️ License Generator GitHub Action
+# ⚡️ License Generator GitHub Action
 
-[![sync2gitee](https://github.com/yi-Xu-0100/license-generator/workflows/sync2gitee/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3Async2gitee)
+[![sync2gitee(list)](<https://github.com/yi-Xu-0100/hub-mirror/workflows/sync2gitee(list)/badge.svg>)](https://github.com/yi-Xu-0100/hub-mirror)
 [![licenseGenerator](https://github.com/yi-Xu-0100/license-generator/workflows/licenseGenerator/badge.svg)](https://github.com/yi-Xu-0100/license-generator/actions?query=workflow%3AlicenseGenerator)
 [![Github last commit](https://img.shields.io/github/last-commit/yi-Xu-0100/license-generator)](https://github.com/yi-Xu-0100/license-generator)
 [![Github latest release](https://img.shields.io/github/v/release/yi-Xu-0100/license-generator)](https://github.com/yi-Xu-0100/license-generator/releases)
@@ -10,7 +10,6 @@ A GitHub actions that use default template to generate license.
 
 ## 🎨 Table of Contents
 
-- [⚡️ License Generator GitHub Action](#️-license-generator-github-action)
 - [🎨 Table of Contents](#-table-of-contents)
 - [✅ Support license table](#-support-license-table)
 - [🚀 Configuration](#-configuration)
@@ -74,10 +73,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.3.3
+        uses: actions/checkout@v2.3.4
 
       - name: Generate License
-        uses: yi-Xu-0100/license-generator@v0.0.1
+        uses: yi-Xu-0100/license-generator@v0.1.0
         with:
           path: LICENSE
           type: MIT
@@ -85,7 +84,7 @@ jobs:
           author: yi_Xu
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3.4.0
+        uses: peter-evans/create-pull-request@v3.6.0
         with:
           commit-message: Update LICENSE
           branch: update-license-patch
