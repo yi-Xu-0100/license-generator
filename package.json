@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/yi-Xu-0100/license-generator#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0"
+    "@actions/core": "^1.5.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.29.1",
